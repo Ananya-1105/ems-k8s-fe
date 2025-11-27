@@ -18,7 +18,7 @@ import {
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const API_BASE = "http://localhost:8080/api/hrs";
+const API_BASE = "http://localhost:30082/api/hrs";
 
 export default function ManageHR() {
   const [hrs, setHrs] = useState([]);
