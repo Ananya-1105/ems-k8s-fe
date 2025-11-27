@@ -85,7 +85,7 @@ const HrDashboard = () => {
   const fetchRecruitments = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:30082/api/candidates");
+      const res = await axios.get("http://localhost:30083/api/candidates");
       setRecruitments(res.data || []);
     } catch (err) {
       console.error("Error fetching recruitments:", err);

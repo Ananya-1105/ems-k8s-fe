@@ -5,7 +5,7 @@ import { FiCheckCircle } from "react-icons/fi";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE_URL = "http://localhost:30082/api/auth";
+const API_BASE_URL = "http://localhost:30083/api/auth";
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({

@@ -24,7 +24,7 @@ const ManageEmployees = () => {
   const fetchEmployees = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:30082/api/employees", {
+      const res = await axios.get("http://localhost:30083/api/employees", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEmployees(res.data);
@@ -111,7 +111,7 @@ const ManageEmployees = () => {
   const confirmDelete = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:30082/api/employees/${deleteId}`, {
+      await axios.delete(`http://localhost:30083/api/employees/${deleteId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setDeleteId(null);

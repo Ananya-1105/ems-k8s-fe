@@ -14,7 +14,7 @@ const EmployeeAttendance = ({ authToken }) => {
   const fetchAttendance = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:30082/api/attendance/me", {
+      const res = await axios.get("http://localhost:30083/api/attendance/me", {
         headers: { Authorization: `Bearer ${authToken}` },
       });
       setAttendance(res.data);
